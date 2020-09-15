@@ -1,6 +1,9 @@
+import consoleMessenger from './consoleMessenger';
+
 export default function createSlidesPerBreakpointObject(slidesPerView) {
-  let slidesPerBreakpoint = [];
-  for (let breakpoint in slidesPerView) {
+	let slidesPerBreakpoint = [];
+	// eslint-disable-next-line no-restricted-syntax, guard-for-in
+  for (const breakpoint in slidesPerView) {
     const slidesPerViewValue = slidesPerView[breakpoint];
     if (!Number.isNaN(slidesPerViewValue)) {
       if (breakpoint === 'default') {
@@ -8,11 +11,11 @@ export default function createSlidesPerBreakpointObject(slidesPerView) {
       } else {
         const breakpointValue = breakpoint;
         if (!Number.isNaN(breakpointValue)) {
-          slidesPerBreakpoint.push({ breakpoint: breakpointValue, slidesPerView: slidesPerViewValue })
+          slidesPerBreakpoint.push({ breakpoint: breakpointValue, slidesPerView: slidesPerViewValue });
         }
       }
     } else if (slidesPerView[breakpoint] === 'auto') {
-      slidesPerBreakpoint.push({ breakpoint: breakpoint, slidesPerView: slidesPerView[breakpoint] });
+      slidesPerBreakpoint.push({ breakpoint, slidesPerView: slidesPerView[breakpoint] });
     } else {
       consoleMessenger.warn('Invalid property value: slides-per-view');
     }

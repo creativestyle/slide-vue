@@ -4,7 +4,8 @@
   "description": "Slider component for vue.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --fix --ext .js,.vue ."
   },
   "repository": {
     "type": "git",
@@ -15,6 +16,11 @@
     "carousel",
     "vue.js"
   ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
   "author": "creativestyle",
   "license": "MIT",
   "bugs": {
@@ -23,5 +29,12 @@
   "homepage": "https://github.com/noiff/slide-vue#readme",
   "dependencies": {
     "smoothscroll-polyfill": "0.4.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-vue": "^7.0.0-beta.3",
+    "husky": "^4.3.0"
   }
 }
