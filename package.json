@@ -1,0 +1,27 @@
+{
+  "name": "slide-vue",
+  "version": "1.0.0",
+  "description": "Slider component for vue.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noiff/slide-vue.git"
+  },
+  "keywords": [
+    "slider",
+    "carousel",
+    "vue.js"
+  ],
+  "author": "creativestyle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noiff/slide-vue/issues"
+  },
+  "homepage": "https://github.com/noiff/slide-vue#readme",
+  "dependencies": {
+    "smoothscroll-polyfill": "0.4.4"
+  }
+}
