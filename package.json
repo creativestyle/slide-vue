@@ -1,5 +1,5 @@
 {
-  "name": "slide-vue",
+  "name": "@vue-utils/slide-vue",
   "version": "1.0.0",
   "description": "Slider component for vue.js",
   "main": "index.js",
@@ -22,6 +22,10 @@
     }
   },
   "author": "creativestyle",
+  "contributors": [
+    "Olga Stefaniuk <olga.stefaniuk@creativesyle.pl>",
+    "Michal Koczkodon <michal.koczkodon@creativesyle.pl>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/creativestyle/slide-vue/issues"
@@ -36,5 +40,8 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-vue": "^7.0.0-beta.3",
     "husky": "^4.3.0"
+  },
+  "publishConfig": {
+    "@vue-utils:registry":"https://gitlab.creativestyle.pl/vue-utils/slide-vue/api/v4/projects/1546/packages/npm/"
   }
 }
