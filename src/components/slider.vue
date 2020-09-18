@@ -231,21 +231,24 @@
         this.slideTo(this.initialSlideIndex);
       }
 
-      let timer = null;
-
-      this.$refs.sliderContainer.addEventListener('scroll', () => {
-        this.isScrolling = true;
-
-        if (timer !== null) {
-          clearTimeout(timer);
-        }
-
-        timer = setTimeout(() => {
-          this.isScrolling = false;
-        }, 100);
-      });
+      this.detectIfSlideIsScrolling();
     },
     methods: {
+      detectIfSlideIsScrolling() {
+        let timer = null;
+
+        this.$refs.sliderContainer.addEventListener('scroll', () => {
+          this.isScrolling = true;
+
+          if (timer !== null) {
+            clearTimeout(timer);
+          }
+
+          timer = setTimeout(() => {
+            this.isScrolling = false;
+          }, 100);
+        });
+      },
       createStylesElement(styles) {
         const css = document.createTextNode(styles);
         const styleSheet = document.createElement('style');
