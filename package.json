@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/noiff/slide-vue.git"
+    "url": "git+https://github.com/creativestyle/slide-vue"
   },
   "keywords": [
     "slider",
@@ -24,9 +24,9 @@
   "author": "creativestyle",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/noiff/slide-vue/issues"
+    "url": "https://github.com/creativestyle/slide-vue/issues"
   },
-  "homepage": "https://github.com/noiff/slide-vue#readme",
+  "homepage": "https://github.com/creativestyle/slide-vue#readme",
   "dependencies": {
     "smoothscroll-polyfill": "0.4.4"
   },
